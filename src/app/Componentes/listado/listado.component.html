@@ -1,0 +1,490 @@
+<!-- Inicio tabla de Todos los Países -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="titulo-table" scope="col">Nombre del País</th>
+            <th class="titulo-table" scope="col">Capital</th>
+            <th class="titulo-table" scope="col">Región</th>
+            <th class="titulo-table" scope="col">Sub Región</th>
+            <th class="titulo-table" scope="col">Población</th>
+            <th class="titulo-table" scope="col">Continente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pais of paisesArr; let j = index; let par = even">
+            <td
+              *ngIf="indexController > j && j >= indexController - tamaPagina"
+            >
+              {{ pais["name"]["official"] }}
+            </td>
+            <td
+              *ngIf="indexController > j && j >= indexController - tamaPagina"
+            >
+               {{pais["capital"][0] }}
+            </td>
+             <td
+              *ngIf="indexController > j && j >= indexController - tamaPagina"
+            >
+               {{pais["capital"][0] }}
+            </td>
+            <td
+              *ngIf="indexController > j && j >= indexController - tamaPagina"
+            >
+              {{ pais["region"] }}
+            </td>
+            <td
+              *ngIf="indexController > j && j >= indexController - tamaPagina"
+            >
+              {{ pais["subregion"] }}
+            </td>
+            <td
+              *ngIf="indexController > j && j >= indexController - tamaPagina"
+            >
+              {{ pais["population"] }}
+            </td>
+            <td
+              *ngIf="indexController > j && j >= indexController - tamaPagina"
+            >
+              {{ pais["continents"][0] }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<!-- FIN tabla de tabla -->
+
+
+
+<!-- Inicio tabla Por nombre -->
+ <h2>Accede por nombre: Spa</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="titulo-table" scope="col">Nombre del País</th>
+            <th class="titulo-table" scope="col">Capital</th>
+            <th class="titulo-table" scope="col">Región</th>
+            <th class="titulo-table" scope="col">Sub Región</th>
+            <th class="titulo-table" scope="col">Población</th>
+            <th class="titulo-table" scope="col">Continente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <td
+            >
+              {{ paisnombre[0]["name"]["official"] }}
+            </td>
+            <td
+            >
+              {{ paisnombre[0]["capital"][0] }}
+            </td>
+            <td
+            >
+              {{ paisnombre[0]["region"] }}
+            </td>
+            <td
+            >
+              {{ paisnombre[0]["subregion"] }}
+            </td>
+            <td
+            >
+              {{ paisnombre[0]["population"] }}
+            </td>
+            <td
+            >
+              {{ paisnombre[0]["continents"][0] }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<!-- FIN tabla de tabla -->
+
+
+<!-- Inicio tabla Por nombre comleto -->
+<h2>Accede por nombre completo: Pitcairn Group of Islands</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="titulo-table" scope="col">Nombre del País</th>
+      <th class="titulo-table" scope="col">Capital</th>
+      <th class="titulo-table" scope="col">Región</th>
+      <th class="titulo-table" scope="col">Sub Región</th>
+      <th class="titulo-table" scope="col">Población</th>
+      <th class="titulo-table" scope="col">Continente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td
+      >
+        {{ paisNombreCompleto[0]["name"]["official"] }}
+      </td>
+      <td
+      >
+        {{ paisNombreCompleto[0]["capital"][0] }}
+      </td>
+      <td
+      >
+        {{ paisNombreCompleto[0]["region"] }}
+      </td>
+      <td
+      >
+        {{ paisNombreCompleto[0]["subregion"] }}
+      </td>
+      <td
+      >
+        {{ paisNombreCompleto[0]["population"] }}
+      </td>
+      <td
+      >
+        {{ paisNombreCompleto[0]["continents"][0] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- FIN tabla de tabla -->
+
+
+<!-- Inicio tabla Por Codigo -->
+<h2>Accede por Codigo: per</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="titulo-table" scope="col">Nombre del País</th>
+      <th class="titulo-table" scope="col">Capital</th>
+      <th class="titulo-table" scope="col">Región</th>
+      <th class="titulo-table" scope="col">Sub Región</th>
+      <th class="titulo-table" scope="col">Población</th>
+      <th class="titulo-table" scope="col">Continente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td
+      >
+        {{ paisPorCodigo[0]["name"]["official"] }}
+      </td>
+      <td
+      >
+        {{ paisPorCodigo[0]["capital"][0] }}
+      </td>
+      <td
+      >
+        {{ paisPorCodigo[0]["region"] }}
+      </td>
+      <td
+      >
+        {{ paisPorCodigo[0]["subregion"] }}
+      </td>
+      <td
+      >
+        {{ paisPorCodigo[0]["population"] }}
+      </td>
+      <td
+      >
+        {{ paisPorCodigo[0]["continents"][0] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- FIN tabla de tabla -->
+
+<!-- Inicio tabla de los Países por lista de código -->
+<h2>Accede por lista de codigos: col,pe,at</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th class="titulo-table" scope="col">Nombre del País</th>
+      <th class="titulo-table" scope="col">Capital</th>
+      <th class="titulo-table" scope="col">Región</th>
+      <th class="titulo-table" scope="col">Sub Región</th>
+      <th class="titulo-table" scope="col">Población</th>
+      <th class="titulo-table" scope="col">Continente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pais of paisesPorListaDeCodigos; let j = index; let par = even">
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["name"]["official"] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["capital"][0] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["region"] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["subregion"] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["population"] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["continents"][0] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- FIN tabla de tabla -->
+
+
+<!-- Inicio tabla de los Países Moneda -->
+<h2>Accede por lista de moneda: dollar</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th class="titulo-table" scope="col">Nombre del País</th>
+      <th class="titulo-table" scope="col">Capital</th>
+      <th class="titulo-table" scope="col">Región</th>
+      <th class="titulo-table" scope="col">Sub Región</th>
+      <th class="titulo-table" scope="col">Población</th>
+      <th class="titulo-table" scope="col">Continente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pais of paisesMoneda; let j = index; let par = even">
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["name"]["official"] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["capital"][0] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["region"] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["subregion"] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["population"] }}
+      </td>
+      <td
+        *ngIf="indexController > j && j >= indexController - tamaPagina"
+      >
+        {{ pais["continents"][0] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- FIN tabla de tabla -->
+
+<!-- Inicio tabla de los Países por lenguaje -->
+<h2>Accede por lista de lenguaje: german</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th class="titulo-table" scope="col">Nombre del País</th>
+      <th class="titulo-table" scope="col">Capital</th>
+      <th class="titulo-table" scope="col">Región</th>
+      <th class="titulo-table" scope="col">Sub Región</th>
+      <th class="titulo-table" scope="col">Población</th>
+      <th class="titulo-table" scope="col">Continente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pais of paisesLenguaje; let h = index; let par = even">
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["name"]["official"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["capital"][0] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["region"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["subregion"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["population"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["continents"][0] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- FIN tabla de tabla -->
+
+<!-- Inicio tabla Por Codigo -->
+<h2>Accede por ciudad capital: lima</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="titulo-table" scope="col">Nombre del País</th>
+      <th class="titulo-table" scope="col">Capital</th>
+      <th class="titulo-table" scope="col">Región</th>
+      <th class="titulo-table" scope="col">Sub Región</th>
+      <th class="titulo-table" scope="col">Población</th>
+      <th class="titulo-table" scope="col">Continente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td
+      >
+        {{ paisCiudadCapital[0]["name"]["official"] }}
+      </td>
+      <td
+      >
+        {{ paisCiudadCapital[0]["capital"][0] }}
+      </td>
+      <td
+      >
+        {{ paisCiudadCapital[0]["region"] }}
+      </td>
+      <td
+      >
+        {{ paisCiudadCapital[0]["subregion"] }}
+      </td>
+      <td
+      >
+        {{ paisCiudadCapital[0]["population"] }}
+      </td>
+      <td
+      >
+        {{ paisCiudadCapital[0]["continents"][0] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- FIN tabla de tabla -->
+
+
+<!-- Inicio tabla de los Países por Region -->
+<h2>Accede por Region: europe</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th class="titulo-table" scope="col">Nombre del País</th>
+      <th class="titulo-table" scope="col">Capital</th>
+      <th class="titulo-table" scope="col">Región</th>
+      <th class="titulo-table" scope="col">Sub Región</th>
+      <th class="titulo-table" scope="col">Población</th>
+      <th class="titulo-table" scope="col">Continente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pais of paisesRegion; let h = index; let par = even">
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["name"]["official"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["capital"][0] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["region"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["subregion"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["population"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["continents"][0] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- FIN tabla de tabla -->
+
+
+<!-- Inicio tabla de los Países por SubRegion -->
+<h2>Accede por SubRegion: south</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th class="titulo-table" scope="col">Nombre del País</th>
+      <th class="titulo-table" scope="col">Capital</th>
+      <th class="titulo-table" scope="col">Región</th>
+      <th class="titulo-table" scope="col">Sub Región</th>
+      <th class="titulo-table" scope="col">Población</th>
+      <th class="titulo-table" scope="col">Continente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pais of paisesSubRegion; let h = index; let par = even">
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["name"]["official"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["capital"][0] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["region"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["subregion"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["population"] }}
+      </td>
+      <td
+        *ngIf="indexController > h && h >= indexController - tamaPagina"
+      >
+        {{ pais["continents"][0] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- FIN tabla de tabla -->
